@@ -8,6 +8,9 @@ module.exports = {
         "./resources/**/*.vue",
     ],
     theme: {
+        container: {
+            center: true,
+        },
         extend: {
             flex: Array.from({ length: 12 }, (_, idx) => idx + 1).reduce(
                 (acc, item) => {
@@ -89,11 +92,7 @@ module.exports = {
                     foreground: "hsl(var(--card-foreground) / <alpha-value>)",
                 },
             },
-            borderRadius: {
-                lg: `var(--radius)`,
-                md: `calc(var(--radius) - 2px)`,
-                sm: "calc(var(--radius) - 4px)",
-            },
+
             fontFamily: {
                 sans: ["var(--font-sans)", ...fontFamily.sans],
                 primary: ["var(--font-primary)"],

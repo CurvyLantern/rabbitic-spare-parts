@@ -1,3 +1,51 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+html,
+body,
+#app {
+    height: 100%;
+}
+
+#app {
+    display: flex;
+}
+
+:root {
+    /* Light Mode Colors */
+    --primary: #c2410c;
+    --primary-foreground: #222222;
+    --primary-light: #f97316;
+    --primary-dark: #9a3412;
+    --secondary: #1cb95f;
+    --secondary-foreground: #222222;
+    --secondary-light: #1cb95f;
+    --secondary-dark: #006b35;
+    --accent: #1c84b9;
+    --accent-foreground: #222222;
+    --background: #f5f5f5;
+    --border: #dddddd;
+    --success: #1cb95f;
+    --error: #ff3333;
+    --warning: #f0ad4e;
+}
+
+/* theme nasim */
+:root {
+    --primary: 17 88% 40%;
+    --primary-foreground: 0 0% 13%;
+    --primary-light: 25 95% 53%;
+    --primary-dark: 15 79% 34%;
+    --secondary: 145 66% 37%;
+    --secondary-foreground: 0 0% 13%;
+    --secondary-light: 145 66% 37%;
+    --secondary-dark: 145 100% 20%;
+    --accent: 204 67% 45%;
+    --accent-foreground: 0 0% 13%;
+    --background: 0 0% 96%;
+    --border: 0 0% 87%;
+    --success: 145 66% 37%;
+    --error: 0 100% 60%;
+    --warning: 39 100% 54%;
+}

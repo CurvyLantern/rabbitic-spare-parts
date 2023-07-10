@@ -1,5 +1,6 @@
 import "./bootstrap";
 import { createApp } from "vue";
+import router from "./router";
 
 import AppLayout from "./layout/AppLayout.vue";
 
@@ -17,5 +18,7 @@ import AppLayout from "./layout/AppLayout.vue";
 const app = createApp(AppLayout);
 
 // app.use(vuetify);
+
+app.use(router);
 
 app.mount("#app");

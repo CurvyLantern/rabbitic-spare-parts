@@ -12,6 +12,9 @@ module.exports = {
             center: true,
         },
         extend: {
+            boxShadow: {
+                top: "0 0 .5rem -1px rgba(0,0,0,.3)",
+            },
             flex: Array.from({ length: 12 }, (_, idx) => idx + 1).reduce(
                 (acc, item) => {
                     acc[item] = item;
@@ -36,6 +39,7 @@ module.exports = {
                 156: 156 * 4,
                 200: 200 * 4,
                 220: 220 * 4,
+                "9/10": `${(9 / 10) * 100}%`,
             },
             backgroundImage: {
                 "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
